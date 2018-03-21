@@ -9,7 +9,7 @@ describe FlightStats::Airline do
   # end
 
   it "must find PS by fs code" do
-    airline = FlightStats::Airport.by_flight_stats_code 'PS'
+    airline = FlightStats::Airline.by_flight_stats_code 'PS'
     airline.active.should be true
     airline.name.should == 'UIA'
     airline.iata.should == 'PS'
