@@ -7,7 +7,7 @@ module FlightStats
                   :widebody,
                   :regional
 
-    @@base_path = "/flex/airlines/equipment/v1/json"
+    @@base_path = "/flex/equipment/rest/v1/json"
 
     class << self
       def all(options = {})
